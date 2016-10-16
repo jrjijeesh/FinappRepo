@@ -1,0 +1,22 @@
+
+
+<ion-view view-title="Finance Management App">
+    <ion-content>
+
+        <div class="im-wrapper">
+          <!-- Button List -->
+          <h4 class="border-top"><i class="icon ion-ios-list-outline"></i> Customer List</h4>
+          <!--<div>
+            sdfsd{{customerList}}
+          </div>-->
+          <div class="list">
+            <div class="item item-button-right" ng-repeat="customer in customerList">
+              {{customer.firstName + ' ' + customer.lastName + ' (' + customer.code + ')'}}
+              <button class="button button-balanced ink" ng-click="goToDetails(customer.code)">
+                <i class="icon ion-ios-telephone"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+    </ion-content>
+</ion-view>

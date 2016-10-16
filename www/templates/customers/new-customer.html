@@ -1,0 +1,92 @@
+
+
+<ion-view view-title="Finance Management App">
+    <ion-content>
+
+        <div class="im-wrapper">
+          <!-- Button List -->
+          <h4 class="border-top"><i class="icon ion-ios-personadd-outline"></i> New Customer </h4>
+          <!--<div>
+            sdfsd{{customerList}}
+          </div>-->
+          <div class="list">
+            <label class="item item-input item-floating-label">
+              <span class="input-label">First Name</span>
+              <input type="text" placeholder="First Name" ng-model="customer.firstName">
+            </label>
+
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Middle Name</span>
+              <input type="text" placeholder="Middle Name" ng-model="customer.middleName">
+            </label>
+
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Last Name</span>
+              <input type="text" placeholder="Last Name" ng-model="customer.lastName">
+            </label>
+
+            <div class="item"> Permanent Address </div>
+
+            <div class="inset-level1">
+                <label class="item item-input item-floating-label">
+                  <span class="input-label">Line1</span>
+                  <input type="text" placeholder="Line1" ng-model="customer.permanentAddress.line1">
+                </label>
+
+                <label class="item item-input item-floating-label">
+                  <span class="input-label">Line2</span>
+                  <input type="text" placeholder="Line2" ng-model="customer.permanentAddress.line2">
+                </label>
+
+                <label class="item item-input item-floating-label">
+                  <span class="input-label">Line3</span>
+                  <input type="text" placeholder="Line3" ng-model="customer.permanentAddress.line3">
+                </label>
+            </div>
+
+
+            <div class="item "> Communication Address </div>
+
+            <div class="inset-level1">
+                <label class="item item-input item-floating-label">
+                  <span class="input-label">Line1</span>
+                  <input type="text" placeholder="Line1" ng-model="customer.communicationAddress.line1">
+                </label>
+
+                <label class="item item-input item-floating-label">
+                  <span class="input-label">Line2</span>
+                  <input type="text" placeholder="Line2" ng-model="customer.communicationAddress.line2">
+                </label>
+
+                <label class="item item-input item-floating-label">
+                  <span class="input-label">Line3</span>
+                  <input type="text" placeholder="Line3" ng-model="customer.communicationAddress.line3">
+                </label>
+            </div>
+
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Phone1</span>
+              <input type="text" placeholder="Phone1" ng-model="customer.phone1">
+            </label>
+
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Phone2</span>
+              <input type="text" placeholder="Phone2" ng-model="customer.phone2">
+            </label>
+
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Email1</span>
+              <input type="text" placeholder="Email1" ng-model="customer.email1">
+            </label>
+
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Email2</span>
+              <input type="text" placeholder="Email2" ng-model="customer.email2">
+            </label>
+          </div>
+          <div class="list center_align">
+            <button class="button icon-right ion-star button-energized" ng-click="saveCustomer()">Save</button>
+          </div>
+        </div>
+    </ion-content>
+</ion-view>

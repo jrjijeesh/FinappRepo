@@ -1,0 +1,45 @@
+
+
+<ion-view view-title="FinApp">
+    <ion-content>
+        <div class="bar bar-subheader bar-stable static text-center">
+            <strong class="title">FinApp</strong>
+        </div>
+        
+        <ion-slide-box on-slide-changed="slideHasChanged($index)">
+          <ion-slide>
+              <img src="img/1.jpg" class="slide-img"></img>
+          </ion-slide>
+          <ion-slide>
+              <img src="img/2.jpg" class="slide-img"></img>
+          </ion-slide>
+          <ion-slide>
+              <img src="img/3.jpg" class="slide-img"></img>
+          </ion-slide>
+          <ion-slide>
+              <img src="img/4.jpg" class="slide-img"></img>
+          </ion-slide>
+          <ion-slide>
+              <img src="img/5.jpg" class="slide-img"></img>
+          </ion-slide>
+        </ion-slide-box>
+        yuyiuyiuyiuhgjhg
+        <div class="tabs-stripped tabs-color-assertive">
+            <a class="tab-item active"><i class="icon ion-home"></i></a>
+            <a class="tab-item active"><i class="icon ion-star"></i></a>
+            <a class="tab-item active"><i class="icon ion-home"></i></a>
+        </div>
+
+        <ion-tabs>
+
+    <ion-tab title="Tab 1">
+          Hello tab 1!
+          <button ng-click="selectTabWithIndex(1)">Select tab 2!</button>
+        </ion-tab>
+        <ion-tab title="Tab 2">Hello tab 2!</ion-tab>
+
+      </ion-tabs>
+        
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-content>
+</ion-view>
