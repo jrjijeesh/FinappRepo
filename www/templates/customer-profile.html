@@ -1,0 +1,51 @@
+
+
+<ion-view view-title="Finance Management App">
+    <ion-content>
+
+        <div class="im-wrapper">
+          <!-- Button List -->
+          <h4 class="border-top"><i class="icon ion-ios-person-outline"></i> Customer Details</h4>
+          <div class="list">
+            <div class="item ">
+              <h2>{{currentCustomer.firstName + ' ' + currentCustomer.middleName + ' ' + currentCustomer.lastName + ' (' + currentCustomer.code + ')'}}</h2>
+              <!--Address-->
+              <p>{{currentCustomer.communicationAddress.line1 + ', ' + currentCustomer.communicationAddress.line2 }}</p>
+              <p>{{currentCustomer.communicationAddress.line3 }}</p>
+            </div>
+
+
+            <div class="item ">
+              <p>{{currentCustomer.email1}}</p>
+              <p>{{currentCustomer.phone1}}</p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      <!--<div class="tabs tabs-royal tabs-icon-left">
+        <a class="tab-item"> <i class="icon ion-home"></i> Loan </a>
+        <a class="tab-item"> <i class="icon ion-star"></i> Savings </a>
+      </div>-->
+
+      <div class="tabs tabs-striped tabs-color-assertive tabs-icon-left">
+        <a class="tab-item " data-ink-color="#ef473a" data-ink-opacity=".35"> <i class="icon ion-android-archive"></i> Loan </a>
+        <a class="tab-item active" data-ink-color="#ef473a" data-ink-opacity=".35"> <i class="icon ion-social-buffer-outline"></i> Savings </a>
+      </div>
+
+      <div class="im-wrapper">
+
+      </div>
+
+
+
+
+
+
+
+
+    </ion-content>
+</ion-view>
